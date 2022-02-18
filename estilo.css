@@ -6,7 +6,7 @@ z-index: 10;
 }
 
 .navbar-brand img{
-    height: 50px;
+    height: 70px;
     padding-left: 30px;
 }
 
@@ -15,33 +15,6 @@ z-index: 10;
 padding: 30px;
 }
 
-.navbar-nav li a{
-    float: right;
-}
-
-#nav-bar ul li a:hover {
- color: rgb(168, 126, 132);
-}
-
-
-.nav-link{
-    font-weight: 600;
-    font-size: 16px;
-   
-}
-
-.navbar-nav{
-    border: none !important;
-}
-
-.footer{
-    padding-top: 60px;
-}
-.contactform{
-    margin-left: 2cm;
-    margin-top: 2cm;
-    margin-right: 2cm;
-}
 
 .map{
     margin-right: 2cm;
@@ -52,3 +25,24 @@ padding: 30px;
     margin-bottom: 2cm;
     text-align: center;
 }
+
+body {
+    background-color:rgba(248,244,241,255);
+}
+
+footer{
+    background-color: rgba(248, 206, 20, 0.39);
+}
+
+.navbar-nav li {
+    display: inline-block;
+    padding: 15px 0;
+}
+    .navbar-nav a{
+    padding: 1em;
+   color: rgb(69, 24, 141) !important;
+   text-decoration: none; 
+   }
+    .navbar-nav a:hover{
+        background-color: rgba(231, 135, 135, 0.164);
+    }

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
    
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="estilo.css" rel="stylesheet" />
+ 
  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
- 
+ <link href="estilo.css" rel="stylesheet" />
  
  <title>Document</title>
 </head>
@@ -17,7 +17,7 @@
 <header>
    <section id="nav-bar">
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
               <img src="img/logo.png" alt="">
@@ -26,7 +26,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul  class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active"  href="index.html">Inicio</a>
               </li>
@@ -78,8 +78,8 @@
  
  
       <div class="col-xs-12 col-lg-6">
-        <h1>Agende su hora</h1>
-        <form class="row g-3">
+        <h1 class="text-center">Agende su hora</h1>
+        <form id=formagenadar class="row g-3">
             <div class="col-md-5">
             <label for="inputNombre" class="form-label">Nombre</label>
             <input type="email" class="form-control" id="inputNombre">
@@ -134,68 +134,75 @@
             
              <div class="col-12">
             <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
          </div>
-        </div>
-      </form>
+  
       </div>
 
-    
+    </form>
   
 </div>
 
   <div class="servicios">
    <div class="row">
-    <div class="col-lg-1">
-      </div>
+    
 
-
-     <div class="col-lg-4">
-        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+     <div class="col-lg-3">
+        <img class="rounded-circle" src="img/vacunatorio.png" alt="Generic placeholder image" width="140" height="140">
+        <h2>Vacunacion</h2>
+        <p>Como parte de la medicina preventiva. Se  realiza calendario de uso de vacunas, previamente se examina para determinar que el paciente está en optimo estado de salud.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-2">
-          </div>
-
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+       
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="img/consulta.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Consulta</h2>
+            <p>Evaluación clínica de cada paciente canino o felino, que requiera atención, para determinar diagnóstico y tratamiento de alguna alteración de salud.
+            </p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>ç
-          <div class="col-lg-1">
           </div>
           
+
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="img/cirugia.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Cirugia</h2>
+            <p>Contamos con equipamiento para el uso de anestesia inhalatoria en todos los procedimientos que requieran anestesia. Hacemos cirugías de baja y alta complejidad. Desde sutura de heridas hasta cirugías de fractura de huesos.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="img/pelu.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Peluqueria</h2>
+            <p>Hacemos baños y corte de pelo según la raza para caninos. Lo que se lleva a cabo previa reserva de horas.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+         
     </div>
 </div>
-<footer class="footer text-white bg-dark" >
+<footer id="footer" class="footer  " >
   <div class="container">
       <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="footer__widget">
-                  <h6>Horario de atencion</h6>
-                  <ul>
-                      <li>Lunes a viernes : 08:00 am – 08:30 pm</li>
-                      <li>Sabado: 10:00 am – 16:30 pm</li>
-                      
-                  </ul>
+                  
+
+                <div class="footer__logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <p>Nuestra misión es dar una atención integral y permanente a su mascota durante todos los días del año, para ello contamos con un gran equipo de profesionales dispuestos a satisfacer las necesidades de nuestros clientes y pacientes.</p>
+
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="footer__about">
-                  <div class="footer__logo">
-                      <a href="#"><img src="img/logo.png" alt=""></a>
-                  </div>
-                  <p>Nuestra misión es dar una atención integral y permanente a su mascota durante todos los días del año, para ello contamos con un gran equipo de profesionales dispuestos a satisfacer las necesidades de nuestros clientes y pacientes.</p>
+                  
+                <h6>Horario de atencion</h6>
+                <ul>
+                    <li>Lunes a viernes : 08:00 am – 08:30 pm</li>
+                    <li>Sabado: 10:00 am – 16:30 pm</li>
 
-                  <div class="footer__social">
-                     
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                   
-                  </div>
+                  visitanos en Valdivia. Huemul esquina Errazuris
+                    
+                </ul>
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
