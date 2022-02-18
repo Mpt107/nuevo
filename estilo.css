@@ -64,12 +64,12 @@ h6{
     padding-right: 12px;
     padding-left: 9px;
 }
-.footer__newslatter {
+.footer__newsletter {
     padding-left: 50px;
     margin-bottom: 30px;
     padding-top: 2cm;
   }
-  .footer__newslatter form input {
+  .footer__newsletter form input {
     height: 50px;
     width: 100%;
     padding-left: 22px;
@@ -78,7 +78,7 @@ h6{
     color: #ffffff;
     font-size: 14px;
   }
-  .footer__newslatter form button {
+  .footer__newsletter form button {
     font-size: 20px;
     color: #f08632;
     background: transparent;
