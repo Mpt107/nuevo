@@ -6,7 +6,7 @@ z-index: 10;
 }
 
 .navbar-brand img{
-    height: 70px;
+    height: 80px;
     padding-left: 30px;
 }
 
@@ -31,7 +31,11 @@ body {
 }
 
 footer{
-    background-color: rgba(248, 206, 20, 0.39);
+    background-color: rgba(241, 205, 43, 0.404);
+    
+}
+#navbar{
+    padding-bottom: 3em;
 }
 
 .navbar-nav li {
@@ -42,7 +46,46 @@ footer{
     padding: 1em;
    color: rgb(69, 24, 141) !important;
    text-decoration: none; 
+   float: right;
    }
     .navbar-nav a:hover{
         background-color: rgba(231, 135, 135, 0.164);
     }
+
+.footer__about{
+    padding-top: 2cm;
+    text-align: justify;
+
+}
+h6{
+    text-align: center;
+}
+#formagenadar{
+    padding-right: 12px;
+    padding-left: 9px;
+}
+.footer__newslatter {
+    padding-left: 50px;
+    margin-bottom: 30px;
+    padding-top: 2cm;
+  }
+  .footer__newslatter form input {
+    height: 50px;
+    width: 100%;
+    padding-left: 22px;
+    background: rgba(253, 243, 234, 0.2);
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .footer__newslatter form button {
+    font-size: 20px;
+    color: #f08632;
+    background: transparent;
+    border: 1px;
+   
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 20px;
+  }

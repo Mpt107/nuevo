@@ -36,9 +36,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Admin</a>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -80,37 +78,37 @@
       <div class="col-xs-12 col-lg-6">
         <h1 class="text-center">Agende su hora</h1>
         <form id=formagenadar class="row g-3">
-            <div class="col-md-5">
+            <div class="col-md-6">
             <label for="inputNombre" class="form-label">Nombre</label>
             <input type="email" class="form-control" id="inputNombre">
             </div>
-            <div class="col-md-5">
-            <label for="inputPassword4" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="inputPassword4">
+            <div class="col-md-6">
+            <label for="inputApellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="inputApellido">
             </div>
              
             
-            <div class="col-md-5">
-             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
+              <label for="inputMascota" class="form-label">Nombre mascota</label>
+              <input type="text" class="form-control" id="inputMscota">
+              </div>
+            <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
              <input type="email" class="form-control" id="inputEmail4">
              </div>
              
-         <div class="col-md-5">
+         <div class="col-md-6">
             <label for="inputphone" class="form-label">Numero Telefonico</label>
             <input type="number" class="form-control" id="inputphone" placeholder="(+569)12345678">
           </div>
          
-          <div class="col-md-5">
+          <div class="col-md-6">
             
               <label class="form-label" for="date">Escoja una fecha</label>
               <input id="date" name="date" type="date" placeholder="fecha" class="form-control input-md">
    
             </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
 
               <label class="form-label" for="hora">Escoja una Hora</label>
               <select class="form-select" >
@@ -151,15 +149,13 @@
         <img class="rounded-circle" src="img/vacunatorio.png" alt="Generic placeholder image" width="140" height="140">
         <h2>Vacunacion</h2>
         <p>Como parte de la medicina preventiva. Se  realiza calendario de uso de vacunas, previamente se examina para determinar que el paciente está en optimo estado de salud.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
        
           <div class="col-lg-3">
             <img class="rounded-circle" src="img/consulta.png" alt="Generic placeholder image" width="140" height="140">
             <h2>Consulta</h2>
             <p>Evaluación clínica de cada paciente canino o felino, que requiera atención, para determinar diagnóstico y tratamiento de alguna alteración de salud.
-            </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            
           </div>
           
 
@@ -167,13 +163,11 @@
             <img class="rounded-circle" src="img/cirugia.png" alt="Generic placeholder image" width="140" height="140">
             <h2>Cirugia</h2>
             <p>Contamos con equipamiento para el uso de anestesia inhalatoria en todos los procedimientos que requieran anestesia. Hacemos cirugías de baja y alta complejidad. Desde sutura de heridas hasta cirugías de fractura de huesos.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
           <div class="col-lg-3">
             <img class="rounded-circle" src="img/pelu.png" alt="Generic placeholder image" width="140" height="140">
             <h2>Peluqueria</h2>
             <p>Hacemos baños y corte de pelo según la raza para caninos. Lo que se lleva a cabo previa reserva de horas.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
          
     </div>
@@ -184,17 +178,10 @@
           <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="footer__widget">
                   
-
                 <div class="footer__logo">
                     <a href="#"><img src="img/logo.png" alt=""></a>
                 </div>
-                <p>Nuestra misión es dar una atención integral y permanente a su mascota durante todos los días del año, para ello contamos con un gran equipo de profesionales dispuestos a satisfacer las necesidades de nuestros clientes y pacientes.</p>
-
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="footer__about">
-                  
+                <br>
                 <h6>Horario de atencion</h6>
                 <ul>
                     <li>Lunes a viernes : 08:00 am – 08:30 pm</li>
@@ -203,10 +190,34 @@
                   visitanos en Valdivia. Huemul esquina Errazuris
                     
                 </ul>
+               
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="footer__about">
+                  
+               <h6>Nuestra misión</h6>
+                <p> es dar una atención integral y permanente a su mascota durante
+                  todos los días del año.
+                   Nos comprometemos a tener la mejor tecnologia y el mejor equipo de profesionales para sus necesidades!
+                 
+                   .</p>
+               <p><a class="btn btn-secondary" href="login.html" role="button">Acceso personal &raquo;</a></p>
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="contact-footer">
+
+                <div class="footer__newslatter">
+                  <h6>Suscribete</h6>
+                  <p>Para recibir tips de como cuidar mejor a tu mascota!</p>
+                  <form action="#">
+                    <input type="text" placeholder="Nombre">
+
+                      <input type="text" placeholder="Email">
+                      <button type="submit"><i class="fa fa-send-o"></i></button>
+                  </form>
+              </div>
                   
            </div>
         </div>
