@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', (eventoLoaded) => {    
-    document.querySelector("form").addEventListener(
+    document.getElementById("form1").addEventListener(
     "submit", (eventoSubmit) => {
         eventoSubmit.preventDefault();
         const email = document.querySelector("#email").value;
