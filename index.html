@@ -9,6 +9,8 @@
  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
  <link href="css/estilo.css" rel="stylesheet" />
+ <script defer src="js/ingreso.js" ></script>
+
  
  <title>Veterinaria Boroscheck</title>
 </head>
@@ -45,65 +47,69 @@
    </section>
 </header>
 
-<div class="row"> 
+
+<div id="mensajes"></div>
+<div class="row">
+   
   <div class="col-xs-12 col-lg-6"> 
-    <form id=formagenadar class="row g-3">
+    <form id="formagenadar" class="row g-3" action="index.html" >
+      
       <h1 class="text-center">Agende su hora</h1>
 
        <div class="col-md-6">
-       <label for="inputNombre" class="form-label">Nombre</label>
-       <input type="email" class="form-control" id="inputNombre">
+       <label for="Nombreagendar" class="form-label">Nombre</label>
+       <input type="text" class="form-control" id="Nombreagendar" name="Nombreagendar">
        </div>
        <div class="col-md-6">
-       <label for="inputApellido" class="form-label">Apellido</label>
-       <input type="text" class="form-control" id="inputApellido">
+       <label for="apellidoagendar" class="form-label">Apellido</label>
+       <input type="text" class="form-control" id="apellidoagendar" name="apellidoagendar">
        </div>
         
        
        <div class="col-md-6">
-         <label for="inputMascota" class="form-label">Nombre mascota</label>
-         <input type="text" class="form-control" id="inputMscota">
+         <label for="mascotaagendar" class="form-label">Nombre mascota</label>
+         <input type="text" class="form-control" id="mascotaagendar" name="mascotaagendar">
          </div>
        <div class="col-md-6">
-         <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
+         <label for="emailagendar" class="form-label">Email</label>
+        <input type="email" class="form-control" id="emailagendar" name="emailagendar">
         </div>
         
     <div class="col-md-6">
-       <label for="inputphone" class="form-label">Numero Telefonico</label>
-       <input type="number" class="form-control" id="inputphone" placeholder="(+569)12345678">
+       <label for="telefonoagendar" class="form-label">Numero Telefonico</label>
+       <input type="number" class="form-control" id="telefonoagendar" placeholder="(+569)12345678" name="telefonoagendar">
      </div>
     
      <div class="col-md-6">
        
-         <label class="form-label" for="date">Escoja una fecha</label>
-         <input id="date" name="date" type="date" placeholder="fecha" class="form-control input-md">
+         <label class="form-label" for="fechaagendar">Escoja una fecha</label>
+         <input id="fechaagendar" name="date" type="date" placeholder="fecha" class="form-control input-md" name="fechaagendar">
 
        </div>
        <div class="col-md-12">
 
-         <label class="form-label" for="hora">Escoja una Hora</label>
-         <select class="form-select" >
+         <label class="form-label" for="horasagendar">Escoja una Hora</label>
+         <select id="horasagendar" name="horasagendar" class="form-select" >
 
            <option selected>Horas</option>
-           <option value="1">9:30 AM</option>
-           <option value="2">10:15 AM</option>
-           <option value="3">11:45 AM</option>
-           <option value="1">12:30 PM</option>
-           <option value="2">1:15 PM</option>
-           <option value="3">3:45 PM</option>
-           <option value="1">4:30 PM</option>
-           <option value="2">5:15 PM</option>
-           <option value="3">6:00 PM</option>
-           <option value="1">7:30 PM</option>
-           <option value="2">8:15 PM</option>
+           <option value="9:30 AM">9:30 AM</option>
+           <option value="10:15 AM">10:15 AM</option>
+           <option value="11:45 AM">11:45 AM</option>
+           <option value="12:30 PM">12:30 PM</option>
+           <option value="1:15 PM">1:15 PM</option>
+           <option value="3:45 PM">3:45 PM</option>
+           <option value="4:30 PM">4:30 PM</option>
+           <option value="5:15 PM">5:15 PM</option>
+           <option value="6:00 PM">6:00 PM</option>
+           <option value="7:30 PM">7:30 PM</option>
+           <option value="8:15 PM">8:15 PM</option>
            
          </select>
        </div>
        
        
         <div class="col-12">
-       <button type="submit" class="btn btn-primary">Sign in</button>
+       <button type="submit" id="button" class="btn btn-primary">Sign in</button>
        <br>
        <br>
      </div>
@@ -130,7 +136,7 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <button class="carousel-control-next" type="submit" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -247,7 +253,9 @@
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script  src="js/prueba.js"></script>
 
- 
+
 </body>
 </html>
