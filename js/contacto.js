@@ -1,72 +1,47 @@
-window.addEventListener("DOMContentLoaded", (eventoLoad) => {
-    document.querySelector("form").addEventListener("submit", (eventoSubmit) => {
-        eventoSubmit.preventDefault();
-        
+function registrar(event) {
+    // evito que el formulario haga un submit normal
+    // para manejarlo dentro de la función
+    event.preventDefault();
+    alert("su formulario fue enviado");
+  //llamamos al boton 
+    const boton = (document.getElementById("boton").disabled = true);
+  
+    // recuperar datos del formulario
+  
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const fono = document.getElementById("asunto").value;
+    const mensaje = document.getElementById("message").value;
+  
+    //envio de datos por API REST
+    const baseURL = "https://ziwekexvsyfvwiuixtxj.supabase.co";
+    const apiCall = "/rest/v1/contacto";
+    const apiKey =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inppd2VrZXh2c3lmdndpdWl4dHhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ2ODkzNzAsImV4cCI6MTk2MDI2NTM3MH0.0SVIhxk97NimVdTSdAWm2yYkS0CoBAytiVKP5Fh5SmI";
+    const url = baseURL + apiCall;
+    
+    // los elementos del cuerpo de body json
+    const contacto = {
+      //las const antes creadas
       
-        // jQuery 
-        const nombre    =  $("#nombre").val();
-        const email     =  $("#email").val(); 
-        const asunto     = $("#asunto").val();
-        const message    = $("#message").val();
-
-
-        // validaciones 
-        const nombreValido  = validarNombre(nombre);
-        const emailValido   = validarEmail(email);
-        const asuntoValido = validarAsunto(asunto);
-        const messageValido = ValidarMessage(message)
-
-        if( nombreValido && emailValido && asuntoValido && messageValido ){
-            guardarDatos(nombre, email, asunto, message);
-        } else {
-            mostrarMensajeError();
-        }
-        return false;
+      nombre,
+      email,
+     asunto,
+      mensaje,
+    };
+  //el fetch
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: apiKey,
+        authorization: "Bearer " + apiKey,
+      },
+      body: JSON.stringify(contacto),
     });
-});
-
-function guardarDatos(nombre, email, asunto, message) {
-    const urlSupabase   = 'https://ziwekexvsyfvwiuixtxj.supabase.co';
-    const apiKey        = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inppd2VrZXh2c3lmdndpdWl4dHhqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0NDY4OTM3MCwiZXhwIjoxOTYwMjY1MzcwfQ.6a5YtTU_6QyC3PBkOWkktv9stwjxobpMIegSSvafxoc';
-    const apiURL        = '/rest/v1/contacto'; // reemplazar con el nombre de su tabla 
-
-    // Javascript Object Notation (JSON)
-    const suscriptor = {
-        nombre,
-        email,
-        asunto,
-        message
-    }; // por ej. {nombre: 'Juanito Perez', email: 'juanito@123.cl'}
-
-    const url = urlSupabase + apiURL; // url = https://hqkjyiudhohhocdkuslx.supabase.co/rest/v1/suscriptores
-    const resultadoFetch = fetch(url, {
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/json",
-            "apikey": apiKey,
-            "authorization": "Bearer "+apiKey,
-            "Prefer": "return=representation" //Prefer: return=representation
-        },
-        body: JSON.stringify( suscriptor )
-    }).then( response => {
-        if( response.ok ) {
-            const r = response.json();
-            return r;
-        } else {
-            console.error("Ocurrió un error al invocar la API de Supabase");
-        }
-    }).then( data => {
-        mostrarMensajeExito(data);
-    }).catch( err => console.dir(err) ) // se invoca catch() cuando hay un error en la red 
-    ;
-}
-
-function mostrarMensajeExito(data){
-    const id = data[0].id;
-    $("#mensajes").addClass("alert alert-success").html("Se ha guardado correctamente su suscripción con el ID #" + id);
-}
-function mostrarMensajeError(){} // Uds. lo implementan 
-function validarNombre(nombre){ return true; } // Uds. lo implementan
-function validarEmail(email){ return true; } // Uds. lo implementan
-function validarAsunto(asunto){ return true; }
-function ValidarMessage(message){ return true; }
+  }
+  // nombre del formulario
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", registrar);
+  //registrar es la funcion que se creo primero

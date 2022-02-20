@@ -30,10 +30,8 @@ body {
     background-color:rgba(248,244,241,255);
 }
 
-footer{
-    background-color: rgba(241, 205, 43, 0.404);
-    
-}
+
+
 #navbar{
     padding-bottom: 3em;
 }
@@ -95,11 +93,11 @@ h6{
   }
  
 
-  
 
-  .form button{
-    font-size: 20px;
-    color: #e48131;
-    background: transparent;
-    border: 1px;
-  }
+  
+ #formagenadar{
+    
+     background-color: #e48131;
+ }
+
+ 
