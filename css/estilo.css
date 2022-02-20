@@ -91,7 +91,7 @@ h6{
      border-radius: 25px;
      color: rgb(10, 148, 136);
     margin-top: 5px;
-    padding: 2em;
+    padding: 3em;
  }
  #formagenadar input{
      border-color:#fffb09;
@@ -143,4 +143,9 @@ html body{
   }
   #formpaciente textarea{
     border-color: #f08632;
+  }
+
+ .containerform{
+      background-color: #f08732ad!important;
+      padding: 5cm;
   }

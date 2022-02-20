@@ -9,6 +9,7 @@
  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
  <link href="css/estilo.css" rel="stylesheet" />
+ <script defer src="js/validacion.js"></script>
  
  <title>Veterinaria Boroscheck</title>
 </head>
@@ -71,6 +72,7 @@
                                 <div class="md-form mb-0">
                                     <input type="text" id="nombre" name="nombre" class="form-control">
                                     <label for="nombre" class="nombre">Nombre</label>
+                                   <div id="feedback-nombre"></div> 
                                 </div>
                                   </div>
                                  
@@ -80,6 +82,7 @@
                                       <div class="md-form mb-0">
                                           <input type="text" id="email" name="email" class="form-control">
                                     <label for="email" class="email">Email</label>
+                                    <div id="feedback-email"></div> 
                                 </div>
                                 </div>
                             
@@ -93,6 +96,8 @@
                                               <div class="md-form mb-0">
                                                   <input type="text" id="asunto" name="asunto" class="form-control">
                                                   <label for="asunto" class="asunto">Asunto</label>
+                                                  <div id="feedback-asunto"></div> 
+
                                               </div>
                                           </div>
                                       </div>
@@ -107,6 +112,7 @@
                                                 <div class="md-form">
                                                     <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                                                     <label for="message">Mensaje</label>
+                                             <div id="feedback-mensaje"> </div>
                                                 </div>
 
                                             </div>

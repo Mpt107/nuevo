@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", (eventoLoad) => {
-    document.querySelector("form").addEventListener("submit", (eventoSubmit) => {
+    document.querySelector("#suscripcionform").addEventListener("submit", (eventoSubmit) => {
         eventoSubmit.preventDefault();
         
        

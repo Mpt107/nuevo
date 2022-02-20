@@ -59,20 +59,24 @@
        <div class="col-md-6">
        <label for="Nombreagendar" class="form-label">Nombre</label>
        <input type="text" class="form-control" id="Nombreagendar" name="Nombreagendar">
+       <div id="feedback-nombre"></div> 
        </div>
        <div class="col-md-6">
        <label for="apellidoagendar" class="form-label">Apellido</label>
        <input type="text" class="form-control" id="apellidoagendar" name="apellidoagendar">
+       
        </div>
         
        
        <div class="col-md-6">
          <label for="mascotaagendar" class="form-label">Nombre mascota</label>
          <input type="text" class="form-control" id="mascotaagendar" name="mascotaagendar">
+         <div id="feedback-nombre"></div> 
          </div>
        <div class="col-md-6">
          <label for="emailagendar" class="form-label">Email</label>
         <input type="email" class="form-control" id="emailagendar" name="emailagendar">
+        <div id="feedback-asunto"></div> 
         </div>
         
     <div class="col-md-6">
@@ -212,7 +216,7 @@
                    Nos comprometemos a tener la mejor tecnologia y el mejor equipo de profesionales para sus necesidades!
                  
                    .</p>
-               <p><a class="btn btn-secondary" href="login.html" role="button">Acceso personal &raquo;</a></p>
+               <p><a class="btn btn-secondary" href="login.html" role="button">Acceso solo personal &raquo;</a></p>
               </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
@@ -222,18 +226,7 @@
                   <h6>Suscribete</h6>
                   <p>Para recibir tips de como cuidar mejor a tu mascota!</p>
                   <p><a class="btn btn-secondary" href="suscripcion.html" role="button">suscribete &raquo;</a></p>
-                  <div id="mensajes">
-                    <div class="footer__newslatter">
-                      <h6>Subscribe</h6>
-                      <p>Get latest updates and offers.</p>
-                      <form action="#">
-                          <input type="text" placeholder="Email">
-                          <br>
-                          <br>
-                          <button type="submit"><i class="fa fa-send-o"></i></button>
-                      </form>
-                  </div>
-                  </div>
+               
                 </div>
 
                 
@@ -254,7 +247,7 @@
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/@supabase/supabase-js"></script>
-    <script  src="js/prueba.js"></script>
+    <script src="js/validacion.js">      </script>
 
 
 </body>
