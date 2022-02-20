@@ -6,100 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link href="estilo.css" rel="stylesheet" />
- <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
- 
+    
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="css/estilo.css" rel="stylesheet" />
 </head>
-
+<body>
 <h1> Ficha de pacientes</h1>
 
-<form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-12">
-      <label for="validationCustom01" class="form-label">Nombre Paciente</label>
-      <input type="text" class="form-control" id="validationCustom01" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-12">
-      <label for="validationCustom02" class="form-label">Nombre Tutor</label>
-      <input type="text" class="form-control" id="validationCustom02" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-12">
-      <label>Fecha de nacimiento
-        <input type="date" name="fechanacimiento" required pattern="\d{4}-\d{2}-\d{2}">
-        <span class="validity"></span>
-      </label>
-    </div>
-    Especie
-    <div class="form-check  col-md-4">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-      <label class="form-check-label" for="flexRadioDefault1">
-      Perro
-      </label>
-    </div>
-    <div class="form-check ">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-      <label class="form-check-label" for="flexRadioDefault2">
-      Gato 
-    </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-      <label class="form-check-label" for="flexRadioDefault2">
-      Otros 
-    </label>
-    </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationCustom04" class="form-label">Especie</label>
-      <select class="radio" id="validationCustom04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>Perro</option>
-        <option>Gato</option>
-        <option>otro</option>
+<div class="row"> 
+  <div class="col-xs-12 col-lg-5"> 
+    <form id=formpaciente class="row g-3">
+      
 
-        
+       <div class="col-md-12">
+       <label for="nombrepaciente" class="form-label">Nombre paciente</label>
+       <input type="text" class="form-control" id="nombrepaciente">
+       </div>
+       <div class="col-md-12">
+       <label for="nombre tutor" class="form-label">Nombre tutor</label>
+       <input type="text" class="form-control" id="nombre tutor">
+       </div>
 
-      </select>
-      <div class="invalid-feedback">
-        Please select a valid state.
-      </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationCustom05" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-        <label class="form-check-label" for="invalidCheck">
-          Agree to terms and conditions
-        </label>
-        <div class="invalid-feedback">
-          You must agree before submitting.
+         <div class="col-md-12">
+       
+          <label class="form-label" for="date">Fecha nacimiento</label>
+          <input id="date" name="date" type="date" placeholder="fecha" class="form-control input-md">
+         </div> 
+
+         <div class="col-md-12">
+          <label for="peso" class="form-label">Peso</label>
+          <input type="number" class="form-control" id="peso">
+          </div>
+
+         <div class="col-md-12">
+
+            <label class="form-label" for="hora">Especie</label>
+            
+            <select class="form-select" >
+   
+              <option selected></option>
+              <option value="1">Perro</option>
+              <option value="2">Gato</option>
+              <option value="3">Otros</option>
+             
+              
+            </select>
+          </div>
+       
+        <div class="col-md-12">
+         Genero
+         <div>
+          <label class="form-check-label" for="flexRadioDefault1">Femenino</label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          </div>
+          <div>
+        <label class="form-check-label" for="flexRadioDefault1">Masculino</label>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         </div>
       </div>
+         <div class="col-md-12">
+        Esta esterilizado
+        <div>
+        <label class="form-check-label" for="flexRadioDefault1">Si</label>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        </div>
+        <div>
+          <label class="form-check-label" for="flexRadioDefault1">NO</label>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          </div>
+          </div>
+
+          <div class="col-md-12">
+            <label for="mensaje" class="form-label">Diagnostico</label>
+            <textarea  type="text" rows="" cols="" class="form-control" id="nombrepaciente"></textarea>
+            </div>
+          
+        <div class="col-12">
+       <button type="submit" class="btn btn-primary">Ingresar</button>
+       <br>
+       <br>
+     </div>
+
+
+    </form>
+
     </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
+ 
+
+    <div class="col-xs-12 col-lg-7"> 
+      <div class="adminbg">
+      <img src="img/vetbg.jpeg" >
+      </div>
+
+     </div>
+
+     
+
+
     </div>
-  </form>
-
-
-<body>
-
-
-
-
-
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script> 

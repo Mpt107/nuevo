@@ -1,19 +1,15 @@
 #nav-bar{
-position: sticky;
-top: 0;
-z-index: 10;
-;
-}
+    width: 100%;
 
+}
+#nav-bar a{
+    float: right;
+}
 .navbar-brand img{
     height: 80px;
     padding-left: 30px;
 }
 
-.navbar-nav li{
-
-padding: 30px;
-}
 
 
 .map{
@@ -24,10 +20,6 @@ padding: 30px;
     margin-top: 2cm;
     margin-bottom: 2cm;
     text-align: center;
-}
-
-body {
-    background-color:rgba(248,244,241,255);
 }
 
 
@@ -42,7 +34,7 @@ body {
 }
     .navbar-nav a{
     padding: 1em;
-   color: rgb(69, 24, 141) !important;
+   color: #e48231d5 !important;
    text-decoration: none; 
    float: right;
    }
@@ -58,10 +50,8 @@ body {
 h6{
     text-align: center;
 }
-#formagenadar{
-    padding-right: 12px;
-    padding-left: 9px;
-}
+
+
 .footer__newsletter {
     padding-left: 50px;
     margin-bottom: 30px;
@@ -97,7 +87,60 @@ h6{
   
  #formagenadar{
     
-     background-color: #e48131;
+     background-color: #e48231d5;
+     border-radius: 25px;
+     color: rgb(10, 148, 136);
+    margin-top: 5px;
+    padding: 3em;
+ }
+ #formagenadar input{
+     border-color:#fffb09;
+     border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    
  }
 
- 
+ .footer{
+     background-color: #f08632;
+ }
+
+
+.navbar {
+      background-color:#ffffff;}
+
+html body{
+    background-color: #ffffff;
+        margin: 0;
+}
+
+.footer__newslatter form input {
+    height: 50px;
+    width: 100%;
+    padding-left: 22px;
+    background: rgba(253, 243, 234, 0.2);
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+
+
+}
+
+.adminbg img {
+    width: 100%;
+    height: auto;
+  }
+
+  #formpaciente{
+      padding: 2em;
+  }
+
+  #formpaciente input{
+    border-color: #f08632;
+  }
+  #formpaciente select{
+    border-color: #f08632;
+  }
+  #formpaciente textarea{
+    border-color: #f08632;
+  }
